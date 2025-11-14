@@ -2,7 +2,7 @@ package msku.ceng.madlab.week7;
 
 public interface BoardView {
     char PLAYER_1_SYMBOL = 'X';
-    char PLAYER_2_SYMBOL = '=';
+    char PLAYER_2_SYMBOL = 'O';
 
     byte DRAW = 0;
 

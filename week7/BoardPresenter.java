@@ -8,7 +8,7 @@ public class BoardPresenter implements BoardListener{
     private BoardView boardView;
     private Board board;
 
-    public BoardPresenter(Board board, BoardView boardView) {
+    public BoardPresenter( BoardView boardView) {
         this.boardView = boardView;
         board = new Board(this);
     }
