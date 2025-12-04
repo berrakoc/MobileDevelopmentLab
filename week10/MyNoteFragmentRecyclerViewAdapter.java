@@ -31,6 +31,7 @@ public class MyNoteFragmentRecyclerViewAdapter extends RecyclerView.Adapter<MyNo
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
+        position = holder.getAdapterPosition();
         holder.mItem = notes.get(position);
         holder.mHeaderView.setText(notes.get(position).getHeader());
         holder.mDateView.setText(new
