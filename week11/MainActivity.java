@@ -163,4 +163,10 @@ public class MainActivity extends AppCompatActivity implements NoteFragment.OnNo
         note.setId(id); // database her note için kendisi id oluşturuyor onu alıp set ettik
         return note;
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        listenerRegistration.remove();
+    }
 }
